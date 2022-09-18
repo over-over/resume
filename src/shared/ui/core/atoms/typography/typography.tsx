@@ -17,6 +17,7 @@ type Props = {
   TextColorProps;
 
 export const Typography = styled.p<Props>(props => ({
+  color: props.theme.palette.text.primary,
   ...props.theme.typography[props.variant],
   ...typography(props),
   ...space(props),

@@ -1,6 +1,6 @@
 import { TTheme } from './types';
 
-export const lightTheme: TTheme = {
+export const darkTheme: TTheme = {
   breakpoints: {
     xs: 320,
     sm: 600,
@@ -33,8 +33,10 @@ export const lightTheme: TTheme = {
       type: 'solid',
     },
     text: {
-      primary: '#a2eeff',
-      secondary: '#001f25',
+      primary: 'rgba(245,245,245, 1)',
+      secondary: 'rgba(255,255,255, 0.75)',
+      // primary: '#a2eeff',
+      // secondary: '#001f25',
     },
   },
   typography: {
