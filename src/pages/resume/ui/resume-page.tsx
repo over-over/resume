@@ -1,4 +1,4 @@
-import { EducationInfo } from '@entities/personal-info';
+import { EducationInfo, ShortPersonalInfo } from '@entities/personal-info';
 import { Badge, Container, Typography, ListItem, List } from '@shared/ui/core';
 
 export const ResumePage = () => {
@@ -9,7 +9,7 @@ export const ResumePage = () => {
           Vladislav Panov
         </Typography>
         <Typography variant="h3" mb={4}>
-          Frontend developer, 25 years
+          Frontend developer
         </Typography>
         <Typography variant="body" fontStyle="italic">
           Занимаюсь разработкой мобильных и веб-приложений с использованием
@@ -32,12 +32,7 @@ export const ResumePage = () => {
       </Container>
 
       <Container as="section" mb={3}>
-        <Badge mb={2} color="primary">
-          Personal info
-        </Badge>
-        <Typography variant="body">E-mail klg.panov@gmail.com</Typography>
-        <Typography variant="body">Telegram @vldpanov</Typography>
-        <Typography variant="body">Linkedin link</Typography>
+        <ShortPersonalInfo />
       </Container>
 
       <Container as="section" mb={3}>
