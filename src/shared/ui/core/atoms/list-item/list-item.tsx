@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ListItem = styled.li`
   position: relative;
   list-style: none;
-  padding-left: 12px;
+  padding-left: 16px;
 
   &::before {
     position: absolute;
